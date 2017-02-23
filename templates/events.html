@@ -1,0 +1,30 @@
+<ion-view view-title="calendar">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="padding">
+        <div id="eventCalendar" ui-calendar="uiConfig.calendar" ng-model="eventSources" calendar="eventCalendar"></div>
+        <div class="list list-inset">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Enter Title</span>
+                <input class="form-control" type="text"  ng-model="userdata.username" placeholder="Enter Title">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Enter Description</span>
+                <input type="text"  ng-model="userdata.email" placeholder="Enter Your Description">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">StartTime</span>
+                <input type="datetime-local">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">EndTime</span>
+                <input type="datetime-local">
+            </label>
+
+            <button class="button button-block button-calm" ng-click="signUp(userdata)">Book a time</button>
+            <span>{{responseMessage}}</span>
+        </div>
+
+    </ion-content>
+</ion-view>

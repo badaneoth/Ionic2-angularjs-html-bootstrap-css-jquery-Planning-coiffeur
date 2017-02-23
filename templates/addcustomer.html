@@ -1,0 +1,27 @@
+
+<ion-view view-title="Add Customer" name="addcustomer-view">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button></ion-nav-back-button>
+        </ion-nav-bar>
+    <ion-content class="has-header">
+        <div class="list list-inset">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Enter name</span>
+                <input class="form-control" type="text"  ng-model="userdata.username" placeholder="Enter Username">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Enter Your Email</span>
+                <input type="text"  ng-model="userdata.email" placeholder="Enter Your Email">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Enter Your Password</span>
+                <input class="form-control" type="password"  ng-model="userdata.password" placeholder="Enter Your Password">
+            </label>
+            <input  type="hidden"  data-ng-model="userdata.role" data-ng-init="userdata.role = 'client'">
+
+            <button class="button button-block button-calm" ng-click="signUp(userdata)">Sign Up</button>
+            <button class="button button-full button-positive" ng-click="signin()">Sign In</button>
+            <span>{{responseMessage}}</span>
+        </div>
+    </ion-content>
+</ion-view>

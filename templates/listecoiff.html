@@ -1,0 +1,28 @@
+<ion-view view-title="Salons coiffure" name="login-view">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button></ion-nav-back-button>
+       </ion-nav-bar>
+    <ion-content>
+
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="search" ng-model="searchQuery">
+            </label>
+
+
+        <ion-list>
+            <ion-item ng-click="chargerFormations(e.etablissementID)" class="item item-avatar"
+                      ng-repeat="e in etablissements | filter:searchQuery">
+
+                <img ng-src="{{url}}images/{{e.logo}}"/>
+                <p>{{e.nomAbrege}}</p>
+                <h2>{{e.nomEtablissement}}</h2>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+
+
+</ion-view>

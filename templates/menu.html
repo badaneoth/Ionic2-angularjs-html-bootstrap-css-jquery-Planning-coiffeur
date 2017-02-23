@@ -1,0 +1,72 @@
+
+
+
+<ion-side-menus>
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons>
+                <button menu-toggle="left" class="button button-icon ion-navicon"></button>
+
+            </ion-nav-buttons>
+        </ion-nav-bar>
+
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-list>
+
+                <center ><div class="item item-body" style="background-size:274px 274px; margin: 0% 0% -12% 0px;">
+
+
+                </div></center>
+                <ion-item class="imaage" menu-close ui-sref="" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204); z-index:999;">
+                    <img src="" style="margin-right: 150px;height: 150px; margin-bottom: -4px;">
+                </ion-item>
+            <ion-item >        <h3 class="title"> Welcome {{user}}!</h3>
+
+            </ion-item>
+                <ion-item menu-close ui-sref="home" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204); z-index:999;">
+                    <img src="img/home.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">Home
+                </ion-item>
+
+
+                <ion-item menu-close ui-sref="listecoiff" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204); z-index:999;">
+                    <img src="img/search.png" style="margin-right: 10px;height: 23px;margin-bottom: -4px;">Search
+                </ion-item>
+
+                <ion-item menu-close ui-sref ="#/app/profile" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204);">
+                    <img src="img/username.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">My Profile
+                </ion-item>
+
+
+
+
+                <ion-item menu-close ui-sref ="customers" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204);">
+                    <img src="img/users.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">Customers
+                </ion-item>
+
+                <ion-item menu-close ui-sref ="addcustomer" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204);">
+                    <img src="img/addusers.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">Add Customer
+                </ion-item>
+
+                <ion-item menu-close ui-sref ="events" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204);">
+                    <img src="img/calendar.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">Events
+                </ion-item>
+                <ion-item menu-close ui-sref ="#/app/profile" style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204);">
+                    <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+
+                </ion-item>
+
+                <!-- Advanced: explicity set the icon for each platform
+                <ion-icon ios="ios-contacts" md="md-contacts"></ion-icon>-->
+
+
+            </ion-list>
+
+
+
+
+    </ion-side-menu>
+
+
+</ion-side-menus>

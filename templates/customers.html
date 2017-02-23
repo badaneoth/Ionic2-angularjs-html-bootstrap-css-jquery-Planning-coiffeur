@@ -1,0 +1,22 @@
+
+<ion-view title="Customers">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-click="chargerFormations(e.etablissementID)" class="item item-avatar" ng-repeat="e in etablissements">
+
+                <img ng-src="{{url}}images/{{e.logo}}"/>
+                <p>{{e.nomAbrege}}</p>
+                <h2>{{e.nomEtablissement}}</h2>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+
+
+
+</ion-view>
